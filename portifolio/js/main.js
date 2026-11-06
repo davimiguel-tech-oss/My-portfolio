@@ -62,4 +62,124 @@
       });
     }, 400);
   });
+
+  /* ---------- Filtro de projetos / certificações ---------- */
+  (function () {
+    const chips = document.querySelectorAll(".filter-chip");
+    const cards = document.querySelectorAll("[data-category]");
+    if (!chips.length || !cards.length) return;
+
+    const cardsArray = Array.from(cards);
+
+    function embaralhar(array) {
+      const resultado = [...array];
+      for (let i = resultado.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [resultado[i], resultado[j]] = [resultado[j], resultado[i]];
+      }
+      return resultado;
+    }
+
+    function aplicarFiltro(categoria) {
+      // Animação de saída
+      cards.forEach((card) => card.classList.remove("in"));
+
+      setTimeout(() => {
+        let exibidos = cardsArray.filter((card) => {
+          return categoria === "Todas" ||
+            card.getAttribute("data-category") === categoria;
+        });
+
+        // Embaralha apenas quando mostra "Todas"
+        if (categoria === "Todas") {
+          exibidos = embaralhar(exibidos);
+        }
+
+        // Esconder todos primeiro
+        cards.forEach((card) => {
+          card.style.display = "none";
+          card.classList.remove("reveal", "in");
+        });
+
+        // Mostrar os que correspondem com animação de entrada
+        exibidos.forEach((card, index) => {
+          card.style.display = "";
+          card.classList.add("reveal");
+          card.style.setProperty("--d", `${index * 0.06}s`);
+          requestAnimationFrame(() => card.classList.add("in"));
+        });
+      }, 150);
+    }
+
+    const removeFilter = document.getElementById("removeFilter");
+
+    function mostrarRemoveFilter(visível) {
+      if (visível) {
+        removeFilter.classList.add("visible");
+      } else {
+        removeFilter.classList.remove("visible");
+      }
+    }
+
+    function aplicarFiltro(categoria) {
+      // Animação de saída
+      cards.forEach((card) => card.classList.remove("in"));
+
+      setTimeout(() => {
+        let exibidos = cardsArray.filter((card) => {
+          return categoria === "Todas" ||
+            card.getAttribute("data-category") === categoria;
+        });
+
+        // Embaralha apenas quando mostra "Todas"
+        if (categoria === "Todas") {
+          exibidos = embaralhar(exibidos);
+        }
+
+        // Esconder todos primeiro
+        cards.forEach((card) => {
+          card.style.display = "none";
+          card.classList.remove("reveal", "in");
+        });
+
+        // Mostrar os que correspondem com animação de entrada
+        exibidos.forEach((card, index) => {
+          card.style.display = "";
+          card.classList.add("reveal");
+          card.style.setProperty("--d", `${index * 0.06}s`);
+          requestAnimationFrame(() => card.classList.add("in"));
+        });
+
+        // Mostrar/esconder o botão X
+        mostrarRemoveFilter(categoria !== "Todas");
+      }, 150);
+    }
+
+    chips.forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const categoria = chip.getAttribute("data-category");
+        const jaEstaAtivo = chip.classList.contains("active");
+
+        // Clicar no filtro já ativo volta para "Todas"
+        const categoriaEfetiva = jaEstaAtivo ? "Todas" : categoria;
+
+        chips.forEach((c) => c.classList.remove("active"));
+
+        const alvo =
+          categoriaEfetiva === "Todas"
+            ? document.querySelector('.filter-chip[data-category="Todas"]')
+            : chip;
+        if (alvo) alvo.classList.add("active");
+
+        aplicarFiltro(categoriaEfetiva);
+      });
+    });
+
+    removeFilter.addEventListener("click", () => {
+      chips.forEach((c) => c.classList.remove("active"));
+      const todas = document.querySelector('.filter-chip[data-category="Todas"]');
+      if (todas) todas.classList.add("active");
+      aplicarFiltro("Todas");
+    });
+  })();
 })();

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -25,6 +26,7 @@
         <a href="sobre.html" class="nav-link">Sobre</a>
         <a href="projetos.html" class="nav-link active">Projetos</a>
         <a href="habilidades.html" class="nav-link">Habilidades</a>
+        <a href="certificacoes.html" class="nav-link">Certificações</a>
         <a href="contato.html" class="nav-link">Contato</a>
       </nav>
 
@@ -34,7 +36,7 @@
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
         </button>
 
-        <a href="Curriculo_Davi_Miguel.pdf" class="btn btn-ghost btn-sm" download>
+        <a href="assets/Curriculo_DaviMiguel.pdf" class="btn btn-ghost btn-sm" download>
           Baixar currículo
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         </a>
@@ -67,17 +69,18 @@
 
         <!-- Filtros -->
         <div class="filter-row reveal" style="--d:.2s">
-          <button class="filter-chip active">Todos</button>
-          <button class="filter-chip">Desenvolvimento</button>
-          <button class="filter-chip">UI/UX</button>
-          <button class="filter-chip">Tecnologia</button>
-          <button class="filter-chip">Criação</button>
+          <button class="filter-chip active" data-category="Todas">Todos</button>
+          <button class="filter-chip" data-category="Tecnologia">Tecnologia</button>
+          <button class="filter-chip" data-category="Edição">Edição</button>
+          <button class="filter-chip" data-category="UI/UX">UI/UX</button>
+          <button class="filter-chip" data-category="Criação">Criação</button>
+          <span class="remove-filter" id="removeFilter">×</span>
         </div>
       </div>
     </section>
 
     <!-- ================= DESTAQUE: EDEN ================= -->
-    <section>
+    <section data-category="Tecnologia">
       <div class="container-narrow">
         <div class="project-detail">
 
@@ -96,24 +99,24 @@
                 </aside>
                 <div class="app-main">
                   <div class="app-top">
-                    <span class="app-greet">Olá, Davi</span>
+                    <span class="app-greet">Olá, Síndico</span>
                     <span class="app-avatar"></span>
                   </div>
-                  <p class="app-date">Sexta, 24 de abril</p>
-                  <h3 class="app-title">O que importa hoje?</h3>
+                  <p class="app-date">Ocorrências do condomínio</p>
+                  <h3 class="app-title">Registrar nova ocorrência</h3>
 
                   <div class="progress-card">
                     <div class="progress-top">
-                      <span>Seu progresso</span>
-                      <strong>75%</strong>
+                      <span>Status do módulo</span>
+                      <strong>Concluído</strong>
                     </div>
-                    <div class="progress-bar"><span style="width:75%"></span></div>
+                    <div class="progress-bar"><span style="width:100%"></span></div>
                   </div>
 
                   <ul class="task-list">
-                    <li class="task"><i class="task-box"></i><span>Finalizar interface do projeto</span><em>08:00</em></li>
-                    <li class="task"><i class="task-box"></i><span>Revisar apresentação</span><em>10:30</em></li>
-                    <li class="task"><i class="task-box"></i><span>Estudar React</span><em>16:00</em></li>
+                    <li class="task"><i class="task-box"></i><span>Morador registra ocorrência</span><em>Módulo</em></li>
+                    <li class="task"><i class="task-box"></i><span>Síndico gerencia ocorrências</span><em>Geral</em></li>
+                    <li class="task"><i class="task-box"></i><span>Login e documentos</span><em>Básico</em></li>
                   </ul>
                 </div>
               </div>
@@ -123,24 +126,25 @@
           <div class="detail-info reveal" style="--d:.08s">
             <div class="meta-row">
               <span>01 / Produto digital</span>
-              <span>Desenvolvimento</span>
+              <span>Tecnologia</span>
             </div>
-            <h2>Éden</h2>
-            <p class="desc">Uma plataforma de organização pessoal que transforma tarefas e metas em uma rotina mais clara, leve e possível.</p>
+            <h2>Éden — Gestão Condominial</h2>
+            <p class="desc">Sistema de gerenciamento de condomínios onde o síndico administra diferentes áreas do condomínio. O módulo desenvolvido é o de ocorrências condominiais: o morador registra a ocorrência e o síndico gerencia todas as ocorrências de forma centralizada. Inclui funcionalidades básicas como login, gerenciamento de documentações do condomínio e landing page.</p>
 
             <div class="info-cols">
               <div class="info-col">
                 <p class="label">Objetivo</p>
-                <p>Simplificar a gestão da rotina sem aumentar a carga mental.</p>
+                <p>Centralizar a comunicação entre moradores e síndico, organizando ocorrências e documentos do condomínio em um só lugar.</p>
               </div>
               <div class="info-col">
                 <p class="label">Resultado</p>
-                <p>Experiência responsiva, acessível e focada em ações rápidas.</p>
+                <p>Módulo de ocorrências funcional, com fluxo de registro pelo morador e gestão completa pelo síndico, além de login e repositório de documentos.</p>
               </div>
             </div>
 
             <ul class="chip-row">
-              <li class="chip">React</li>
+              <li class="chip">PHP</li>
+              <li class="chip">MySQL</li>
               <li class="chip">JavaScript</li>
               <li class="chip">CSS</li>
               <li class="chip">Figma</li>
@@ -150,7 +154,7 @@
               <a href="https://eden.gabsprojects.uk/stable/landing-page/index.php">Demo
                 <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
               </a>
-              <a href="#">GitHub
+              <a href="https://github.com/Eden-ETEOT">GitHub
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               </a>
             </div>
@@ -165,8 +169,49 @@
       <div class="container-narrow">
         <div class="projects-grid">
 
-          <!-- Nexo -->
-          <article class="project-card reveal">
+          <!-- TecnoHelp — Tecnologia -->
+          <article class="project-card reveal" data-category="Tecnologia">
+            <div class="card-mockup mx-green">
+              <div class="win"><div class="dots"><i></i><i></i><i></i></div></div>
+              <span class="name">TecnoHelp</span>
+              <span class="letter">T</span>
+              <span class="tag">Central de Suporte</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>01 / Tecnologia</span>
+                <span>Tecnologia</span>
+              </div>
+              <h3>TecnoHelp</h3>
+              <p class="desc">Base de conhecimento para tornar o suporte técnico mais humano, rápido e fácil de consultar, reduzindo chamados recorrentes.</p>
+              <div class="info-cols">
+                <div class="info-col">
+                  <p class="label">Objetivo</p>
+                  <p>Reduzir dúvidas recorrentes e melhorar o autosserviço dos usuários.</p>
+                </div>
+                <div class="info-col">
+                  <p class="label">Resultado</p>
+                  <p>Conteúdo organizado por intenção, com busca simplificada e navegação intuitiva.</p>
+                </div>
+              </div>
+              <ul class="chip-row">
+                <li class="chip">HTML</li>
+                <li class="chip">CSS</li>
+                <li class="chip">JavaScript</li>
+              </ul>
+              <div class="detail-links">
+                <a href="#">Demo
+                  <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                </a>
+                <a href="#">GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Nexo — UI/UX -->
+          <article class="project-card reveal" data-category="UI/UX">
             <div class="card-mockup mx-purple">
               <div class="win"><div class="dots"><i></i><i></i><i></i></div></div>
               <span class="name">Nexo</span>
@@ -175,19 +220,19 @@
             </div>
             <div class="card-body">
               <div class="card-meta">
-                <span>01 / Infotment Criativo</span>
+                <span>02 / UI/UX</span>
                 <span>UI/UX</span>
               </div>
               <h3>Nexo</h3>
-              <p class="desc">Experiência digital para um estúdio criativo, com direção visual editorial e navegação fluida.</p>
+              <p class="desc">Experiência digital para um estúdio criativo, com direção visual editorial e navegação fluida entre serviços e portfólio.</p>
               <div class="info-cols">
                 <div class="info-col">
                   <p class="label">Objetivo</p>
-                  <p>Comunicar serviços complexos de forma simples.</p>
+                  <p>Comunicar serviços complexos de forma simples e visualmente atraente.</p>
                 </div>
                 <div class="info-col">
                   <p class="label">Resultado</p>
-                  <p>Interface modular pronta para crescer com a marca.</p>
+                  <p>Interface modular, responsiva e pronta para crescer com a identidade da marca.</p>
                 </div>
               </div>
               <ul class="chip-row">
@@ -206,38 +251,38 @@
             </div>
           </article>
 
-          <!-- Pulso -->
-          <article class="project-card reveal" style="--d:.06s">
+          <!-- Reels Técnicos — Edição (vídeo no Google Drive) -->
+          <article class="project-card reveal" data-category="Edição">
             <div class="card-mockup mx-orange">
               <div class="win"><div class="dots"><i></i><i></i><i></i></div></div>
-              <span class="name">Pulso</span>
-              <span class="letter">P</span>
-              <span class="tag">Conteúdo Audiovisual</span>
+              <span class="name">Reels Técnicos</span>
+              <span class="letter">R</span>
+              <span class="tag">Edição de Vídeo</span>
             </div>
             <div class="card-body">
               <div class="card-meta">
-                <span>02 / Conteúdo Audiovisual</span>
-                <span>Criação</span>
+                <span>03 / Edição</span>
+                <span>Edição</span>
               </div>
-              <h3>Pulso</h3>
-              <p class="desc">Sistema visual e peças em movimento para uma série de conteúdo sobre tecnologia e cultura.</p>
+              <h3>Reels Técnicos</h3>
+              <p class="desc">Série de vídeos curtos editados explicando conceitos de tecnologia e suporte, com motion básico, legendagem e ritmo para redes sociais.</p>
               <div class="info-cols">
                 <div class="info-col">
                   <p class="label">Objetivo</p>
-                  <p>Criar uma linguagem reconhecível em diferentes formatos.</p>
+                  <p>Transformar conteúdos técnicos em peças leves, dinâmicas e fáceis de consumir.</p>
                 </div>
                 <div class="info-col">
                   <p class="label">Resultado</p>
-                  <p>Peças flexíveis para vídeo, redes sociais e apresentações.</p>
+                  <p>Vídeos editados com cortes, transições e legendas, disponíveis para assistir diretamente.</p>
                 </div>
               </div>
               <ul class="chip-row">
+                <li class="chip">Premiere Pro</li>
                 <li class="chip">After Effects</li>
-                <li class="chip">Premiere</li>
-                <li class="chip">Figma</li>
+                <li class="chip">CapCut</li>
               </ul>
               <div class="detail-links">
-                <a href="#">Demo
+                <a href="https://drive.google.com" target="_blank" rel="noopener">Assistir no Google Drive
                   <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
                 </a>
                 <a href="#">GitHub
@@ -247,35 +292,118 @@
             </div>
           </article>
 
-          <!-- Atlas Help -->
-          <article class="project-card reveal" style="--d:.12s">
-            <div class="card-mockup mx-green">
+          <!-- Portfólio Fotográfico — Criação (fotos e flyers) -->
+          <article class="project-card reveal" data-category="Criação">
+            <div class="card-mockup mx-orange">
               <div class="win"><div class="dots"><i></i><i></i><i></i></div></div>
-              <span class="name">Atlas Help</span>
-              <span class="letter">A</span>
-              <span class="tag">Central de Suporte</span>
+              <span class="name">Portfólio Visual</span>
+              <span class="letter">P</span>
+              <span class="tag">Fotos &amp; Flyers</span>
             </div>
             <div class="card-body">
               <div class="card-meta">
-                <span>03 / Central de Suporte</span>
-                <span>Tecnologia</span>
+                <span>04 / Criação</span>
+                <span>Criação</span>
               </div>
-              <h3>Atlas Help</h3>
-              <p class="desc">Base de conhecimento para tornar o suporte técnico mais humano, rápido e fácil de consultar.</p>
+              <h3>Portfólio Visual</h3>
+              <p class="desc">Coleção de fotos e flyers produzidos para eventos, marcas e redes sociais, com direção visual voltada à identidade de cada projeto.</p>
               <div class="info-cols">
                 <div class="info-col">
                   <p class="label">Objetivo</p>
-                  <p>Reduzir dúvidas recorrentes e melhorar o autosserviço.</p>
+                  <p>Criar peças visuais que traduzam a essência de cada marca em formato físico e digital.</p>
                 </div>
                 <div class="info-col">
                   <p class="label">Resultado</p>
-                  <p>Conteúdo organizado por intenção e uso simplificado.</p>
+                  <p>Flyers e fotografias com linguagem reconhecível, prontos para impressão e publicação.</p>
                 </div>
               </div>
               <ul class="chip-row">
-                <li class="chip">HTML</li>
-                <li class="chip">CSS</li>
+                <li class="chip">Photoshop</li>
+                <li class="chip">Illustrator</li>
+                <li class="chip">Canva</li>
+                <li class="chip">Fotografia</li>
+              </ul>
+              <div class="detail-links">
+                <a href="#">Ver galeria
+                  <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                </a>
+                <a href="#">GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pulse — Edição (vídeo no Google Drive) -->
+          <article class="project-card reveal" data-category="Edição">
+            <div class="card-mockup mx-purple">
+              <div class="win"><div class="dots"><i></i><i></i><i></i></div></div>
+              <span class="name">Pulso</span>
+              <span class="letter">P</span>
+              <span class="tag">Conteúdo Audiovisual</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>05 / Edição</span>
+                <span>Edição</span>
+              </div>
+              <h3>Pulso</h3>
+              <p class="desc">Sistema visual e peças em movimento para uma série de conteúdo sobre tecnologia e cultura, com identidade consistente entre formatos.</p>
+              <div class="info-cols">
+                <div class="info-col">
+                  <p class="label">Objetivo</p>
+                  <p>Criar uma linguagem reconhecível em diferentes formatos de vídeo e rede social.</p>
+                </div>
+                <div class="info-col">
+                  <p class="label">Resultado</p>
+                  <p>Peças flexíveis para vídeo, redes sociais e apresentações, com edição direta no Google Drive.</p>
+                </div>
+              </div>
+              <ul class="chip-row">
+                <li class="chip">After Effects</li>
+                <li class="chip">Premiere</li>
+                <li class="chip">Figma</li>
+              </ul>
+              <div class="detail-links">
+                <a href="https://drive.google.com" target="_blank" rel="noopener">Assistir no Google Drive
+                  <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                </a>
+                <a href="#">GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- App Task — Tecnologia -->
+          <article class="project-card reveal" data-category="Tecnologia">
+            <div class="card-mockup mx-purple">
+              <div class="win"><div class="dots"><i></i><i></i><i></i></div></div>
+              <span class="name">Task Flow</span>
+              <span class="letter">T</span>
+              <span class="tag">App de Produtividade</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>06 / Tecnologia</span>
+                <span>Tecnologia</span>
+              </div>
+              <h3>Task Flow</h3>
+              <p class="desc">Aplicativo de gerenciamento de tarefas com foco em produtividade, organização de rotina e interface limpa e responsiva.</p>
+              <div class="info-cols">
+                <div class="info-col">
+                  <p class="label">Objetivo</p>
+                  <p>Ajudar usuários a organizar a rotina sem aumentar a carga mental.</p>
+                </div>
+                <div class="info-col">
+                  <p class="label">Resultado</p>
+                  <p>Experiência responsiva, acessível e focada em ações rápidas de criar e concluir tarefas.</p>
+                </div>
+              </div>
+              <ul class="chip-row">
+                <li class="chip">React</li>
                 <li class="chip">JavaScript</li>
+                <li class="chip">CSS</li>
               </ul>
               <div class="detail-links">
                 <a href="#">Demo
@@ -307,6 +435,7 @@
           <a href="sobre.html">Sobre</a>
           <a href="projetos.html">Projetos</a>
           <a href="habilidades.html">Habilidades</a>
+          <a href="certificacoes.html">Certificações</a>
           <a href="contato.html">Contato</a>
         </nav>
       </div>

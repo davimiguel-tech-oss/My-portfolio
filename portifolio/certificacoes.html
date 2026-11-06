@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificações — Davi Miguel</title>
+  <meta name="description" content="Certificações e cursos concluídos nas áreas de tecnologia, desenvolvimento profissional e design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Davi Miguel" srcset="" style="width: 100px;">
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="projetos.html" class="nav-link">Projetos</a>
+        <a href="habilidades.html" class="nav-link">Habilidades</a>
+        <a href="certificacoes.html" class="nav-link active">Certificações</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Alternar tema claro/escuro">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+
+        <a href="Curriculo_Davi_Miguel.pdf" class="btn btn-ghost btn-sm" download>
+          Baixar currículo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="page-hero">
+      <div class="container-narrow">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">Certificações</p>
+            <h1 class="page-title reveal" style="--d:.06s">
+              Aprendizado com<br>
+              <span class="accent">comprovante.</span>
+            </h1>
+          </div>
+          <p class="section-desc reveal" style="--d:.12s">
+            Cursos e certificações concluídos nas áreas de tecnologia, desenvolvimento profissional e design.
+          </p>
+        </div>
+        <hr class="divider reveal" style="--d:.16s">
+
+        <!-- Filtros -->
+        <div class="filter-row reveal" style="--d:.2s">
+          <button class="filter-chip active" data-category="Todas">Todas</button>
+          <button class="filter-chip" data-category="Tecnologia">Tecnologia</button>
+          <button class="filter-chip" data-category="Desenvolvimento Profissional e Pessoal">Desenvolvimento Profissional e Pessoal</button>
+          <button class="filter-chip" data-category="Design">Design</button>
+          <span class="remove-filter" id="removeFilter">×</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GRID DE CERTIFICAÇÕES ================= -->
+    <section>
+      <div class="container-narrow">
+        <div class="certs-grid">
+
+          <!-- Tecnologia -->
+          <article class="cert-card reveal" data-category="Tecnologia">
+            <span class="cert-badge">Tecnologia</span>
+            <h3>JavaScript Essentials</h3>
+            <p class="issuer">Alura</p>
+            <p class="desc">Fundamentos de JavaScript, manipulação do DOM, eventos e programação assíncrona para desenvolvimento web.</p>
+            <ul class="chip-row">
+              <li class="chip">JavaScript</li>
+              <li class="chip">Web</li>
+              <li class="chip">Front-end</li>
+            </ul>
+            <a href="#" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+          <article class="cert-card reveal" data-category="Tecnologia">
+            <span class="cert-badge">Tecnologia</span>
+            <h3>PHP com MySQL</h3>
+            <p class="issuer">Alura</p>
+            <p class="desc">Desenvolvimento back-end com PHP, integração com banco de dados MySQL e construção de aplicações server-side.</p>
+            <ul class="chip-row">
+              <li class="chip">PHP</li>
+              <li class="chip">MySQL</li>
+              <li class="chip">Back-end</li>
+            </ul>
+            <a href="#" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+          <!-- Desenvolvimento Profissional e Pessoal (originais) -->
+          <article class="cert-card reveal" data-category="Desenvolvimento Profissional e Pessoal">
+            <span class="cert-badge">Desenvolvimento Profissional e Pessoal</span>
+            <h3>Suporte Técnico e Help Desk</h3>
+            <p class="issuer">SENAC</p>
+            <p class="desc">Diagnóstico de hardware e software, instalação de sistemas, atendimento ao usuário e resolução de incidentes.</p>
+            <ul class="chip-row">
+              <li class="chip">Suporte</li>
+              <li class="chip">Hardware</li>
+              <li class="chip">Software</li>
+            </ul>
+            <a href="#" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+          <!-- Design -->
+          <article class="cert-card reveal" data-category="Design">
+            <span class="cert-badge">Design</span>
+            <h3>UI Design com Figma</h3>
+            <p class="issuer">Alura</p>
+            <p class="desc">Criação de interfaces, componentes reutilizáveis, prototipagem e design systems com foco em usabilidade.</p>
+            <ul class="chip-row">
+              <li class="chip">Figma</li>
+              <li class="chip">UI Design</li>
+              <li class="chip">Prototipagem</li>
+            </ul>
+            <a href="#" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+          <article class="cert-card reveal" data-category="Design">
+            <span class="cert-badge">Design</span>
+            <h3>Pesquisa de UX</h3>
+            <p class="issuer">Alura</p>
+            <p class="desc">Métodos de pesquisa de usuário, entrevistas, personas, jornada do usuário e validação de interfaces.</p>
+            <ul class="chip-row">
+              <li class="chip">UX Research</li>
+              <li class="chip">Design</li>
+              <li class="chip">Experiência</li>
+            </ul>
+            <a href="#" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+          <!-- Desenvolvimento Profissional e Pessoal (novas da Fundação Bradesco) -->
+          <article class="cert-card reveal" data-category="Desenvolvimento Profissional e Pessoal">
+            <span class="cert-badge">Desenvolvimento Profissional e Pessoal</span>
+            <h3>Comunicação Empresarial</h3>
+            <p class="issuer">Fundação Bradesco | Escola Virtual</p>
+            <p class="desc">Comunicação empresarial para desenvolvimento de habilidades de expressão e interação profissional.</p>
+            <ul class="chip-row">
+              <li class="chip">Comunicação</li>
+              <li class="chip">Empresarial</li>
+              <li class="chip">Profissional</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1uODxMwjzmfqva2SksPnVNkS2KJvr74Qc/view?usp=sharing" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+          <article class="cert-card reveal" data-category="Desenvolvimento Profissional e Pessoal">
+            <span class="cert-badge">Desenvolvimento Profissional e Pessoal</span>
+            <h3>Processo de Julgamento e Tomada de Decisões Responsáveis</h3>
+            <p class="issuer">Fundação Bradesco | Escola Virtual | Programa Semente</p>
+            <p class="desc">Processos de julgamento e tomada de decisões com responsabilidade no ambiente profissional.</p>
+            <ul class="chip-row">
+              <li class="chip">Tomada de Decisão</li>
+              <li class="chip">Responsabilidade</li>
+              <li class="chip">Gestão</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1E0Zl5YmHHQC_2El3U-ltPHPjS9ERSegV/view?usp=sharing" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+          <article class="cert-card reveal" data-category="Desenvolvimento Profissional e Pessoal">
+            <span class="cert-badge">Desenvolvimento Profissional e Pessoal</span>
+            <h3>Desenvolvimento Profissional</h3>
+            <p class="issuer">Fundação Bradesco | Escola Virtual</p>
+            <p class="desc">Desenvolvimento profissional focado no crescimento de competências e carreira.</p>
+            <ul class="chip-row">
+              <li class="chip">Desenvolvimento</li>
+              <li class="chip">Carreira</li>
+              <li class="chip">Profissional</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/12XnxdJlNx1p4KF-was4OCQKUkjNWoY4F/view?usp=sharing" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+          <article class="cert-card reveal" data-category="Desenvolvimento Profissional e Pessoal">
+            <span class="cert-badge">Desenvolvimento Profissional e Pessoal</span>
+            <h3>Inclusividade</h3>
+            <p class="issuer">Fundação Bradesco | Escola Virtual | Talento Incluir</p>
+            <p class="desc">Inclusividade e diversidade no ambiente de trabalho.</p>
+            <ul class="chip-row">
+              <li class="chip">Inclusão</li>
+              <li class="chip">Diversidade</li>
+              <li class="chip">Talento Incluir</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1y-M60RnRmfWKYy7CfssReZRlouOQsN1e/view?usp=sharing" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+          <article class="cert-card reveal" data-category="Desenvolvimento Profissional e Pessoal">
+            <span class="cert-badge">Desenvolvimento Profissional e Pessoal</span>
+            <h3>Organização Pessoal</h3>
+            <p class="issuer">Fundação Bradesco | Escola Virtual</p>
+            <p class="desc">Organização pessoal e gestão de rotina e produtividade.</p>
+            <ul class="chip-row">
+              <li class="chip">Organização</li>
+              <li class="chip">Produtividade</li>
+              <li class="chip">Pessoal</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1Fmw7Idqzp8FUtQKespw-qu2kXtt4aaSx/view?usp=sharing" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+          <article class="cert-card reveal" data-category="Desenvolvimento Profissional e Pessoal">
+            <span class="cert-badge">Desenvolvimento Profissional e Pessoal</span>
+            <h3>Postura e Imagem Profissional</h3>
+            <p class="issuer">Fundação Bradesco | Escola Virtual</p>
+            <p class="desc">Postura e imagem profissional no ambiente corporativo.</p>
+            <ul class="chip-row">
+              <li class="chip">Postura</li>
+              <li class="chip">Imagem Profissional</li>
+              <li class="chip">Corporativo</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1R2iVeI49R4PJIsV3A3kD3co5IYJyujKL/view?usp=sharing" class="link">Ver certificado
+              <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div style="height: 100px"></div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container-narrow">
+      <div class="footer-top">
+        <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Davi Miguel" srcset="" style="width: 100px;">
+        </a>
+        <p class="footer-tagline">Transformando ideias em experiências digitais.</p>
+        <nav class="footer-links">
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="habilidades.html">Habilidades</a>
+          <a href="certificacoes.html">Certificações</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 Davi Miguel. Feito com intenção.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
