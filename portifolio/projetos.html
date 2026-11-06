@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos — Davi Miguel</title>
+  <meta name="description" content="Uma seleção de projetos entre desenvolvimento, tecnologia, design e criação — cada um com um desafio diferente.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Davi Miguel" srcset="" style="width: 100px;">
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="projetos.html" class="nav-link active">Projetos</a>
+        <a href="habilidades.html" class="nav-link">Habilidades</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Alternar tema claro/escuro">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+
+        <a href="Curriculo_Davi_Miguel.pdf" class="btn btn-ghost btn-sm" download>
+          Baixar currículo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="page-hero">
+      <div class="container-narrow">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">Projetos</p>
+            <h1 class="page-title reveal" style="--d:.06s">
+              Ideias que ganharam<br>
+              <span class="accent">forma e função.</span>
+            </h1>
+          </div>
+          <p class="section-desc reveal" style="--d:.12s">
+            Uma seleção de projetos entre desenvolvimento, tecnologia, design e criação — cada um com um desafio diferente.
+          </p>
+        </div>
+        <hr class="divider reveal" style="--d:.16s">
+
+        <!-- Filtros -->
+        <div class="filter-row reveal" style="--d:.2s">
+          <button class="filter-chip active">Todos</button>
+          <button class="filter-chip">Desenvolvimento</button>
+          <button class="filter-chip">UI/UX</button>
+          <button class="filter-chip">Tecnologia</button>
+          <button class="filter-chip">Criação</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DESTAQUE: EDEN ================= -->
+    <section>
+      <div class="container-narrow">
+        <div class="project-detail">
+
+          <div class="detail-mockup reveal">
+            <div class="laptop">
+              <div class="laptop-bar">
+                <i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i>
+                <span class="url-pill">eden.app / hoje</span>
+              </div>
+              <div class="laptop-body">
+                <aside class="app-side">
+                  <span class="app-logo">E</span>
+                  <i class="side-line"></i>
+                  <i class="side-line"></i>
+                  <i class="side-line"></i>
+                </aside>
+                <div class="app-main">
+                  <div class="app-top">
+                    <span class="app-greet">Olá, Davi</span>
+                    <span class="app-avatar"></span>
+                  </div>
+                  <p class="app-date">Sexta, 24 de abril</p>
+                  <h3 class="app-title">O que importa hoje?</h3>
+
+                  <div class="progress-card">
+                    <div class="progress-top">
+                      <span>Seu progresso</span>
+                      <strong>75%</strong>
+                    </div>
+                    <div class="progress-bar"><span style="width:75%"></span></div>
+                  </div>
+
+                  <ul class="task-list">
+                    <li class="task"><i class="task-box"></i><span>Finalizar interface do projeto</span><em>08:00</em></li>
+                    <li class="task"><i class="task-box"></i><span>Revisar apresentação</span><em>10:30</em></li>
+                    <li class="task"><i class="task-box"></i><span>Estudar React</span><em>16:00</em></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-info reveal" style="--d:.08s">
+            <div class="meta-row">
+              <span>01 / Produto digital</span>
+              <span>Desenvolvimento</span>
+            </div>
+            <h2>Éden</h2>
+            <p class="desc">Uma plataforma de organização pessoal que transforma tarefas e metas em uma rotina mais clara, leve e possível.</p>
+
+            <div class="info-cols">
+              <div class="info-col">
+                <p class="label">Objetivo</p>
+                <p>Simplificar a gestão da rotina sem aumentar a carga mental.</p>
+              </div>
+              <div class="info-col">
+                <p class="label">Resultado</p>
+                <p>Experiência responsiva, acessível e focada em ações rápidas.</p>
+              </div>
+            </div>
+
+            <ul class="chip-row">
+              <li class="chip">React</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">CSS</li>
+              <li class="chip">Figma</li>
+            </ul>
+
+            <div class="detail-links">
+              <a href="https://eden.gabsprojects.uk/stable/landing-page/index.php">Demo
+                <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+              </a>
+              <a href="#">GitHub
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GRID DE PROJETOS ================= -->
+    <section>
+      <div class="container-narrow">
+        <div class="projects-grid">
+
+          <!-- Nexo -->
+          <article class="project-card reveal">
+            <div class="card-mockup mx-purple">
+              <div class="win"><div class="dots"><i></i><i></i><i></i></div></div>
+              <span class="name">Nexo</span>
+              <span class="letter">N</span>
+              <span class="tag">Website &amp; Conceptual</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>01 / Infotment Criativo</span>
+                <span>UI/UX</span>
+              </div>
+              <h3>Nexo</h3>
+              <p class="desc">Experiência digital para um estúdio criativo, com direção visual editorial e navegação fluida.</p>
+              <div class="info-cols">
+                <div class="info-col">
+                  <p class="label">Objetivo</p>
+                  <p>Comunicar serviços complexos de forma simples.</p>
+                </div>
+                <div class="info-col">
+                  <p class="label">Resultado</p>
+                  <p>Interface modular pronta para crescer com a marca.</p>
+                </div>
+              </div>
+              <ul class="chip-row">
+                <li class="chip">Figma</li>
+                <li class="chip">UI Design</li>
+                <li class="chip">Prototipagem</li>
+              </ul>
+              <div class="detail-links">
+                <a href="#">Demo
+                  <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                </a>
+                <a href="#">GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pulso -->
+          <article class="project-card reveal" style="--d:.06s">
+            <div class="card-mockup mx-orange">
+              <div class="win"><div class="dots"><i></i><i></i><i></i></div></div>
+              <span class="name">Pulso</span>
+              <span class="letter">P</span>
+              <span class="tag">Conteúdo Audiovisual</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>02 / Conteúdo Audiovisual</span>
+                <span>Criação</span>
+              </div>
+              <h3>Pulso</h3>
+              <p class="desc">Sistema visual e peças em movimento para uma série de conteúdo sobre tecnologia e cultura.</p>
+              <div class="info-cols">
+                <div class="info-col">
+                  <p class="label">Objetivo</p>
+                  <p>Criar uma linguagem reconhecível em diferentes formatos.</p>
+                </div>
+                <div class="info-col">
+                  <p class="label">Resultado</p>
+                  <p>Peças flexíveis para vídeo, redes sociais e apresentações.</p>
+                </div>
+              </div>
+              <ul class="chip-row">
+                <li class="chip">After Effects</li>
+                <li class="chip">Premiere</li>
+                <li class="chip">Figma</li>
+              </ul>
+              <div class="detail-links">
+                <a href="#">Demo
+                  <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                </a>
+                <a href="#">GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Atlas Help -->
+          <article class="project-card reveal" style="--d:.12s">
+            <div class="card-mockup mx-green">
+              <div class="win"><div class="dots"><i></i><i></i><i></i></div></div>
+              <span class="name">Atlas Help</span>
+              <span class="letter">A</span>
+              <span class="tag">Central de Suporte</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span>03 / Central de Suporte</span>
+                <span>Tecnologia</span>
+              </div>
+              <h3>Atlas Help</h3>
+              <p class="desc">Base de conhecimento para tornar o suporte técnico mais humano, rápido e fácil de consultar.</p>
+              <div class="info-cols">
+                <div class="info-col">
+                  <p class="label">Objetivo</p>
+                  <p>Reduzir dúvidas recorrentes e melhorar o autosserviço.</p>
+                </div>
+                <div class="info-col">
+                  <p class="label">Resultado</p>
+                  <p>Conteúdo organizado por intenção e uso simplificado.</p>
+                </div>
+              </div>
+              <ul class="chip-row">
+                <li class="chip">HTML</li>
+                <li class="chip">CSS</li>
+                <li class="chip">JavaScript</li>
+              </ul>
+              <div class="detail-links">
+                <a href="#">Demo
+                  <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                </a>
+                <a href="#">GitHub
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div style="height: 100px"></div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container-narrow">
+      <div class="footer-top">
+        <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Davi Miguel" srcset="" style="width: 100px;">
+        </a>
+        <p class="footer-tagline">Transformando ideias em experiências digitais.</p>
+        <nav class="footer-links">
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="habilidades.html">Habilidades</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 Davi Miguel. Feito com intenção.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

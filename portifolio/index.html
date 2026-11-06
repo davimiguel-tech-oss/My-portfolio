@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davi Miguel — Technology &amp; Creative</title>
+  <meta name="description" content="Eu transformo ideias em experiências digitais. Tecnologia, desenvolvimento, design e criatividade para transformar ideias em projetos reais.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Davi Miguel" srcset="" style="width: 100px;">
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="sobre.html" class="nav-link">Sobre</a>
+        <a href="projetos.html" class="nav-link">Projetos</a>
+        <a href="habilidades.html" class="nav-link">Habilidades</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Alternar tema claro/escuro">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+
+        <a href="Curriculo_Davi_Miguel.pdf" class="btn btn-ghost btn-sm" download>
+          Baixar currículo
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <p class="status-badge reveal">
+            <span class="status-dot"></span>
+            Disponível para novos projetos
+          </p>
+
+          <p class="hero-eyebrow reveal" style="--d:.06s">Davi Miguel <span>/ Technology &amp; Creative</span></p>
+
+          <h1 class="hero-title reveal" style="--d:.12s">
+            Eu transformo ideias em <span class="accent">experiências digitais.</span>
+          </h1>
+
+          <p class="hero-lead reveal" style="--d:.18s">
+            Tecnologia, desenvolvimento, design e criatividade para transformar ideias em projetos reais.
+          </p>
+
+          <div class="hero-actions reveal" style="--d:.24s">
+            <a href="projetos.html" class="btn btn-primary">
+              Ver projetos
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#" class="btn btn-ghost">
+              Baixar currículo
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero-tags reveal" style="--d:.3s">
+            <li>Desenvolvimento</li>
+            <li>UI/UX</li>
+            <li>Criação digital</li>
+          </ul>
+        </div>
+
+        <!-- Ilustração -->
+        <div class="hero-visual reveal" style="--d:.2s" aria-hidden="true">
+          <div class="visual-card">
+            <span class="visual-label label-tr">03 — Experiência</span>
+            <span class="visual-label label-bl">01 — Ideia</span>
+            <span class="visual-label label-bc">02 — Sistema</span>
+
+            <span class="cross cross-v"></span>
+            <span class="cross cross-h"></span>
+
+            <span class="dm-watermark">DM</span>
+            <span class="shape-circle"></span>
+            <span class="shape-ring"></span>
+
+            <div class="code-window">
+              <div class="code-dots"><i></i><i></i><i></i></div>
+              <pre class="code-body"><code><span class="c-key">const</span> <span class="c-var">ideia</span> <span class="c-op">=</span> <span class="c-str">"possibilidade"</span>;
+
+<span class="c-key">function</span> <span class="c-fn">criar</span><span class="c-op">(</span><span class="c-var">ideia</span><span class="c-op">) {</span>
+  <span class="c-key">return</span> <span class="c-var">experiencia</span>;
+<span class="c-op">}</span></code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= O QUE EU FAÇO ================= -->
+    <section class="services" id="sobre">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">O que eu faço</p>
+            <h2 class="section-title reveal" style="--d:.06s">Da primeira ideia ao <span class="accent">projeto real.</span></h2>
+          </div>
+          <p class="section-desc reveal" style="--d:.12s">
+            Combino diferentes habilidades para construir soluções que fazem sentido — na tela e fora dela.
+          </p>
+        </div>
+
+        <ul class="service-list">
+
+          <li class="service-row reveal">
+            <span class="service-num">01</span>
+            <span class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <h3 class="service-title">Desenvolvimento</h3>
+            <p class="service-text">Sites e interfaces responsivas, funcionais e construídas com atenção aos detalhes.</p>
+            <ul class="chip-row">
+              <li class="chip">Front-end</li>
+              <li class="chip">Web</li>
+              <li class="chip">Responsividade</li>
+            </ul>
+            <span class="row-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </li>
+
+          <li class="service-row reveal" style="--d:.06s">
+            <span class="service-num">02</span>
+            <span class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </span>
+            <h3 class="service-title">Tecnologia</h3>
+            <p class="service-text">Soluções práticas, suporte técnico e organização de sistemas para resolver problemas reais.</p>
+            <ul class="chip-row">
+              <li class="chip">Suporte</li>
+              <li class="chip">Sistemas</li>
+              <li class="chip">Web</li>
+            </ul>
+            <span class="row-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </li>
+
+          <li class="service-row reveal" style="--d:.12s">
+            <span class="service-num">03</span>
+            <span class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </span>
+            <h3 class="service-title">Design</h3>
+            <p class="service-text">Experiências claras e consistentes que conectam identidade, conteúdo e usabilidade.</p>
+            <ul class="chip-row">
+              <li class="chip">UI/UX</li>
+              <li class="chip">Figma</li>
+              <li class="chip">Identidade</li>
+            </ul>
+            <span class="row-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </li>
+
+          <li class="service-row reveal" style="--d:.18s">
+            <span class="service-num">04</span>
+            <span class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"/></svg>
+            </span>
+            <h3 class="service-title">Criação</h3>
+            <p class="service-text">Apresentações, vídeos e conteúdos que traduzem ideias em narrativas visuais.</p>
+            <ul class="chip-row">
+              <li class="chip">Vídeo</li>
+              <li class="chip">Áudio</li>
+              <li class="chip">Slides</li>
+            </ul>
+            <span class="row-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= PROJETO EM DESTAQUE ================= -->
+    <section class="project" id="projetos">
+      <div class="container-narrow">
+
+        <div class="section-head project-head">
+          <div>
+            <p class="eyebrow reveal">Projeto em destaque</p>
+            <h2 class="section-title light reveal" style="--d:.06s">Conheça o <span class="accent">Eden.</span></h2>
+          </div>
+          <p class="section-desc light reveal" style="--d:.12s">
+            Um projeto que une estratégia, design e desenvolvimento em uma experiência simples e intencional.
+          </p>
+        </div>
+
+        <!-- Mockups -->
+        <div class="showcase reveal" style="--d:.1s">
+          <div class="laptop">
+            <div class="laptop-bar">
+              <i class="dot red"></i><i class="dot yellow"></i><i class="dot green"></i>
+              <span class="url-pill">eden.app / hoje</span>
+            </div>
+            <div class="laptop-body">
+              <aside class="app-side">
+                <span class="app-logo">E</span>
+                <i class="side-line"></i>
+                <i class="side-line"></i>
+                <i class="side-line"></i>
+              </aside>
+              <div class="app-main">
+                <div class="app-top">
+                  <span class="app-greet">Olá, Davi</span>
+                  <span class="app-avatar"></span>
+                </div>
+                <p class="app-date">Sexta, 24 de abril</p>
+                <h3 class="app-title">O que importa hoje?</h3>
+
+                <div class="progress-card">
+                  <div class="progress-top">
+                    <span>Seu progresso</span>
+                    <strong>75%</strong>
+                  </div>
+                  <div class="progress-bar"><span style="width:75%"></span></div>
+                </div>
+
+                <ul class="task-list">
+                  <li class="task"><i class="task-box"></i><span>Finalizar interface do projeto</span><em>08:00</em></li>
+                  <li class="task"><i class="task-box"></i><span>Revisar apresentação</span><em>10:30</em></li>
+                  <li class="task"><i class="task-box"></i><span>Estudar React</span><em>16:00</em></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="phone">
+            <span class="phone-notch"></span>
+            <div class="phone-screen">
+              <h4>Bom dia.</h4>
+              <p>3 tarefas pendentes</p>
+              <div class="donut">
+                <div class="donut-inner">
+                  <strong>75</strong>
+                  <span>%</span>
+                </div>
+              </div>
+              <ul class="phone-chips">
+                <li><i></i>Projeto Eden</li>
+                <li><i></i>Apresentação</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info do projeto -->
+        <div class="project-info">
+          <div class="pi-left reveal">
+            <p class="pi-index">01 / 04</p>
+            <h3 class="pi-title">Organize o hoje.<br>Cultive o amanhã.</h3>
+          </div>
+
+          <div class="pi-mid reveal" style="--d:.06s">
+            <p>
+              O Eden nasceu para tornar a organização pessoal mais leve. Uma plataforma onde
+              tarefas, hábitos e objetivos convivem em uma interface calma, clara e eficiente.
+            </p>
+            <ul class="pi-bullets">
+              <li>Planejamento diário</li>
+              <li>Acompanhamento de hábitos</li>
+              <li>Interface responsiva</li>
+              <li>Foco e produtividade</li>
+            </ul>
+          </div>
+
+          <div class="pi-right reveal" style="--d:.12s" id="habilidades">
+            <p class="pi-tech-label">Tecnologias</p>
+            <ul class="chip-row dark">
+              <li class="chip">React</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">CSS</li>
+              <li class="chip">Figma</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm">
+              Ver estudo de caso
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CONTATO ================= -->
+    <section class="contact" id="contato">
+      <div class="container-narrow contact-inner">
+        <p class="eyebrow reveal">Vamos construir algo?</p>
+        <h2 class="contact-title reveal" style="--d:.06s">
+          Tem uma ideia em mente?<br>
+          <span class="accent">Vamos tirar do papel.</span>
+        </h2>
+        <div class="reveal" style="--d:.12s">
+          <a href="mailto:contato@davimiguel.com" class="btn btn-primary">
+            Começar uma conversa
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container-narrow">
+      <div class="footer-top">
+        <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Davi Miguel" srcset="" style="width: 100px;">
+        </a>
+        <p class="footer-tagline">Transformando ideias em experiências digitais.</p>
+        <nav class="footer-links">
+          <a href="sobre.html">Sobre</a>
+          <a href="projetos.html">Projetos</a>
+          <a href="habilidades.html">Habilidades</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 Davi Miguel. Feito com intenção.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
